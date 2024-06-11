@@ -1,1 +1,1 @@
-muqarrab1217.github.io
+www.muqarrab.com
