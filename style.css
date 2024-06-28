@@ -396,6 +396,63 @@ span{
     margin: auto;
 }
 
+.projects{
+    display: block;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.projects::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.project-content{
+    float: left;
+    width: 50%;
+    margin-top: 10rem;
+
+}
+
+.project-content h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.project-content p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    max-width: 90%;
+    margin: 0 ;
+}
+
+.project-videos{
+    height: 400px;
+    float: right;
+    width: 50%;
+}
+
+.skilsset{
+    display: flex;
+}
+
+.skill{
+    font-size: 2rem;
+    background: var(--main-color);
+    color: black;
+    margin: 1rem 2px;
+    padding: 0 1rem;
+    border-radius: 4px;
+}
+
+.skill:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
 .contact{
     background-color: var(--second-bg-color);
 }
@@ -510,6 +567,13 @@ span{
     .footer{
         padding: 2rem 3%;
     }
+    .projects{
+        display: block;
+        align-items: center;
+    }
+    .project-videos{
+        margin: 2rem auto;
+    }
 }
 @media(max-width:895px) {
     #menu-icon{
@@ -572,5 +636,21 @@ span{
     }
     .services-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .project h2{
+        font-size: 7rem;
+        margin:2rem auto;
+    }
+
+    .project-content h2{
+        font-size: 2rem;
+    }
+
+    .project-content p{
+        font-size: 1.2rem;
+        font-weight: 300;
+        max-height: 100px;
+        margin: 0 auto;
     }
 }
